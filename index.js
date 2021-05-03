@@ -24,17 +24,6 @@ router.route('/').get(getRep)
 
 router.route('/create').post(createRep)
 
-/*app.use((req, res, next) => {
-    let err = new Error('Not Found');
-    err.status = 404;
-    next(err);
-});
-
-app.use((err, req, res, next) => {
-    res.status(err.status || 500).json({
-        err : err.message || 'Something went wrong'
-    })
-});*/
 
 app.use('/reports',router);
 
